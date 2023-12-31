@@ -11,7 +11,7 @@ from playsound import playsound
 import openai
 
 # Set up the OpenAI API client
-openai.api_key = "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"
+openai.api_key = ""
 greeting = "Hi my name is Buddy!"
 
 ttg = gtts.gTTS(greeting)
