@@ -31,7 +31,7 @@ def SpeakText(command):
 
 
 # Set up the OpenAI API client
-openai.api_key = "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"
+openai.api_key = ""
 greeting = "Hi my name is Buddy!"
 
 ttg = gtts.gTTS(greeting)
