@@ -1,8 +1,8 @@
 pip install spacy
 python -m spacy download en_core_web_sm
 
-
 import spacy
+from user_input import get_user_input  # Import the function from user_input.py
 
 # Load the spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -44,10 +44,6 @@ class BuddyNLP:
 # Example usage
 if __name__ == "__main__":
     buddy = BuddyNLP()
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() == 'exit':
-            break
-        response = buddy.respond(user_input)
-        print("Buddy:", response)
-
+    user_input = get_user_input()  # Get user input from the user_input.py file
+    response = buddy.respond(user_input)
+    print("Buddy:", response)
