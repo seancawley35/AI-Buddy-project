@@ -1,29 +1,12 @@
-class KnowledgeBase:
-    def __init__(self):
-        # Initialize an empty dictionary to store information
-        self.data = {}
+# Initial knowledge base of Buddy
+knowledge_base = {
+    'greet': 'Hello! How can I help you today?',
+    'thank': 'You\'re welcome!',
+    'bye': 'Goodbye! Have a great day!',
+}
 
-    def learn(self, key, information):
-        """Store new information in the knowledge base."""
-        # Here, 'key' is a string that represents the topic or category of the information,
-        # and 'information' is the actual piece of data or fact to store.
-        self.data[key] = information
-
-    def retrieve(self, key):
-        """Retrieve information from the knowledge base."""
-        # Return the information associated with the 'key', or None if the key is not found.
-        return self.data.get(key, None)
-
-# Example usage
-if __name__ == "__main__":
-    kb = KnowledgeBase()
-    
-    # Learning some information
-    kb.learn('greeting', 'Hello, how can I assist you?')
-    kb.learn('farewell', 'Goodbye, have a nice day!')
-
-    # Retrieving and printing information
-    print(kb.retrieve('greeting'))  # Output: Hello, how can I assist you?
-    print(kb.retrieve('farewell'))  # Output: Goodbye, have a nice day!
-    print(kb.retrieve('unknown'))  # Output: None
-
+def save_knowledge_base():
+    # This function saves the knowledge_base dict to a file
+    # For simplicity, we'll overwrite the same file each time.
+    with open('knowledge_base_data.py', 'w') as file:
+        file.write('knowledge_base = ' + str(knowledge_base))
