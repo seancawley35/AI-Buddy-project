@@ -33,3 +33,8 @@ Versatile Assistance: From providing information to offering companionship, Budd
 Engaging and Fun: With the addition of a personalized avatar, interactions with Buddy are not just helpful but also enjoyable, adding a new dimension to your daily routines.
 
 Buddy is more than just a chatbot; it's a companion designed to make your life easier, more informed, and more enjoyable. Embrace the future of personal AI companionship with Buddy—where conversations come to life.
+
+
+![image](https://github.com/seancawley35/AI-Buddy-project/assets/48701193/5fd055a0-d7b3-475e-b774-08538a224c66)       ![image](https://github.com/seancawley35/AI-Buddy-project/assets/48701193/ec4f7704-a7d1-43de-be2c-59749d1c7743)
+
+
